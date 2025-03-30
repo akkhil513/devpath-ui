@@ -1,0 +1,167 @@
+.home-section {
+    background-color: #0f0f0f;
+    color:white;
+    min-height: 100vh;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    .home-icon {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+    
+        a {
+            display: inline-block;
+            text-decoration: none; /* Remove underline */
+            color: white; /* Set text color */
+            font-size: 1.5rem; /* Adjust font size */
+            font-weight: bold; /* Make it bold */
+            cursor: pointer; /* Show pointer cursor on hover */
+            transition: color 0.3s ease;
+    
+            &:hover {
+                color: #00ff57; /* Change color on hover */
+            }
+        }
+    }
+
+    .content {
+        padding-left: 15rem;
+        max-width: 800px;
+        left: 5rem;
+        h1 {
+            font-family: 'Sergi', sans-serif;
+            font-size: 5.5rem;
+            font-weight:bold;
+            line-height: 1;
+            left: 5rem;
+
+            .highlight {
+                color: #00ff57; 
+                font-size: 4rem;
+                left: 5rem;
+            }
+        }
+
+        p {
+            font-family: 'Anton', sans-serif;
+            font-size: 1.1rem;
+            // margin: 1.5rem 0;
+            color: #ccc;
+            left: 5rem;
+        }
+
+        .hire-button {
+            background-color: #00ff57;
+            color: black;
+            padding: 0.75rem 2 rem;
+            border: none;
+            font-weight:bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s ease;
+
+            .hover {
+                background-color: #00cc44;
+            }
+        }
+    }
+
+    .left-email{
+        position: fixed;
+        left: 0;
+        bottom: 20%;
+        transform: rotate(-90deg) translateY(-50%);
+        font-size: 0.9rem;
+        letter-spacing:0;
+        color: #ccc;
+    }
+
+    .stats{
+        position: absolute;
+        right: 2rem;
+        bottom: 10rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .stat{
+            h2 {
+                color: #00ff57;
+                font-size: 2.5rem;
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+                font-size: 0.9rem;
+                color: #aaa;
+            }
+        }
+    }
+
+    // Add these styles at the end of the file
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1000;
+
+    span {
+        display: flex;
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+}
+
+.nav-drawer {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #1a1a1a;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+    z-index: 999;
+
+    &.open {
+        right: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #00ff57;
+            }
+        }
+    }
+}
+}

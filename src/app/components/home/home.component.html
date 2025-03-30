@@ -1,1 +1,43 @@
-<p>home works!</p>
+<section class = "home-section">
+
+    <div class="home-icon">
+        <a routerLink="/" aria-label="Go to Home" class = "logo" href="/">
+            DevPath
+        </a>
+    </div>
+    
+    <div class="hamburger-menu" (click)="toggleMenu()" (keydown.enter)="toggleMenu()" tabindex="0" role="button" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    
+      <div class="nav-drawer" [class.open]="menuOpen">
+        <nav>
+          <a routerLink="/" routerLinkActive="active">Home</a>
+          <a routerLink="about" routerLinkActive="active">About</a>
+          <a routerLink="projects" routerLinkActive="active">Projects</a>
+          <a routerLink="contact" routerLinkActive="active">Contact</a>
+        </nav>
+      </div>
+
+    <div class="content" data-aos="fade-up">
+    <h1><span>Welcome to</span><br /><span class="highlight">DevPath</span></h1>
+    <p data-aos="fade-up" data-aos-delay="200">Your journey to becoming a developer starts here.</p>
+    <button class="hire-button" data-aos="zoom-in" data-aos-delay="400" routerLink="/contact">Hire Me</button>
+    </div>
+
+   
+    <div class="left-email" >akhilg9550&#64;gmail.com</div>
+    <div class = "stats">
+        <div class="stat">
+            <h2>5+</h2>
+            <p>Projects Completed</p>
+        </div>
+        <div class="stat">
+            <h2>5+</h2>
+            <p>Years of Experience</p>
+        </div>
+    </div>
+</section>
+
