@@ -1,43 +1,108 @@
-<section class = "home-section">
-
-    <div class="home-icon">
-        <a routerLink="/" aria-label="Go to Home" class = "logo" href="/">
-            DevPath
+<section class ="main">
+    <div class="left-email fixed bottom-32 left-0" style="z-index: 1000;">
+        <a href ="mailto:akhilg9550@gmail.com" class="px-3 text-muted-foreground tracking-[1px] transition-all hover:text-foreground" style="writing-mode: vertical-rl; text-orientation: mixed;">
+            akhilg9550&#64;gmail.com
         </a>
     </div>
-    
-    <div class="hamburger-menu" (click)="toggleMenu()" (keydown.enter)="toggleMenu()" tabindex="0" role="button" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    
-      <div class="nav-drawer" [class.open]="menuOpen">
-        <nav>
-          <a routerLink="/" routerLinkActive="active">Home</a>
-          <a routerLink="about" routerLinkActive="active">About</a>
-          <a routerLink="projects" routerLinkActive="active">Projects</a>
-          <a routerLink="contact" routerLinkActive="active">Contact</a>
-        </nav>
-      </div>
 
-    <div class="content" data-aos="fade-up">
-    <h1><span>Welcome to</span><br /><span class="highlight">DevPath</span></h1>
-    <p data-aos="fade-up" data-aos-delay="200">Your journey to becoming a developer starts here.</p>
-    <button class="hire-button" data-aos="zoom-in" data-aos-delay="400" routerLink="/contact">Hire Me</button>
+    <div class="fixed-progress" style="z-index: 1000;">
+        <div class="progress-bar"></div>
     </div>
 
-   
-    <div class="left-email" >akhilg9550&#64;gmail.com</div>
-    <div class = "stats">
-        <div class="stat">
-            <h2>5+</h2>
-            <p>Projects Completed</p>
+    <section class = "home-section">
+
+        <div class="home-icon">
+            <a routerLink="/" aria-label="Go to Home" class = "logo" href="/">
+                DevPath
+            </a>
         </div>
-        <div class="stat">
-            <h2>5+</h2>
-            <p>Years of Experience</p>
+        
+        <div class="hamburger-menu" (click)="toggleMenu()" (keydown.enter)="toggleMenu()" tabindex="0" role="button" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </div>
+        
+        <div class="nav-drawer" [class.open]="menuOpen">
+            <nav>
+            <a routerLink="/" routerLinkActive="active">Home</a>
+            <a routerLink="about" routerLinkActive="active">About</a>
+            <a routerLink="projects" routerLinkActive="active">Projects</a>
+            <a routerLink="contact" routerLinkActive="active">Contact</a>
+            </nav>
+        </div>
+
+        <div class="content" data-aos="fade-up">
+        <h1><span>Welcome to</span><br /><span class="highlight">DevPath</span></h1>
+        <p data-aos="fade-up" data-aos-delay="200">Your journey to becoming a developer starts here.</p>
+        <button class="hire-button" data-aos="zoom-in" data-aos-delay="400" routerLink="/contact">Hire Me</button>
+        </div>
+
+        <div class = "stats">
+            <div class="stat">
+                <h2>5+</h2>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat">
+                <h2>5+</h2>
+                <p>Years of Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <section id = "about" class = "about-section"  >
+        <div class="container">
+            <h2 class="text-4xl md:text-6xl font-thin mb-20 slide-up-and-fade">
+                I believe in a user-centered design approach, ensuring that every project I work on is tailored to meet the specific needs of its users.
+            </h2>
+            <p class="pb-3 border-b text-muted-foreground slide-up-and-fade" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+                This is me.
+            </p>
+            <div class="grid md:grid-cols-12 mt-9">
+                <div class="md:col-span-5">
+                    <p class="text-5xl slide-up-and-fade" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+                        Hi, I'm Akhil Gollapalli.
+                    </p>
+                </div>
+                <div class="md:col-span-7">
+                    <div class="text-lg text-muted-foreground max-w-[450px]">
+                        <p class="slide-up-and-fade" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+                            I'm a frontend web developer dedicated to turning ideas into creative solutions. I specialize in creating seamless and intuitive user experiences.
+                        </p>
+                        <p class="mt-3 slide-up-and-fade" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+                            My approach focuses on creating scalable, high-performing solutions tailored to both user needs and business objectives. By prioritizing performance, accessibility, and responsiveness, I strive to deliver experiences that not only engage users but also drive tangible results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section id = "experience" class="experience-section" >
+        <div class="experience-card">
+            <h3>Experience</h3>
+                <h2>
+                    <p>Over 5 years of experience in web development, specializing in front-end technologies.</p>
+                    <p>Worked on various projects ranging from small applications to large-scale enterprise solutions.</p>
+                    <p>Proficient in HTML, CSS, JavaScript, and popular frameworks like Angular and React.</p>
+                    <p>Strong understanding of responsive design principles and best practices.</p>
+                    <p>Experience with version control systems like Git and collaborative development workflows.</p>
+                    <p>Skilled in debugging and optimizing code for performance and scalability.</p>
+                    <p>Excellent problem-solving skills and a keen eye for detail.</p>
+                </h2>    
+            </div>
+        </section>    
+
+    <section id="contact" class="contact-section" >
+        <div class="contact-card">
+            <h3>Contact Me</h3>
+            <p>If you have any questions or would like to discuss a project, feel free to reach out!</p>
+            <form (submit)="onSubmit()">
+                <input type="text" placeholder="Akhil Gollapalli" required>
+                <input type="email" placeholder="akhilg9550@gmail.com" required>
+                <textarea placeholder="Please provide details about your project or inquiry" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            </div>
+    </section>
 </section>
-

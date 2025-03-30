@@ -13,6 +13,9 @@ export class HomeComponent {
   toggleMenu(): void {
     this.menuOpen = !this.menuOpen;
   }
+  onSubmit(): void {
+    console.log('Form submitted');
+  }
 }
 
 
